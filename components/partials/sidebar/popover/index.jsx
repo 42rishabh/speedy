@@ -141,9 +141,7 @@ const PopoverSidebar = ({ trans }) => {
           ))}
         </ul>
         {!collapsed && (
-          <div className="-mx-2 ">
-            <AddBlock />
-          </div>
+          <AddBlock />
         )}
       </ScrollArea>
       <LogoutFooter />
