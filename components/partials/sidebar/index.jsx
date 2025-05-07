@@ -25,10 +25,10 @@ const Sidebar = ({ trans }) => {
       classic: <ClassicSidebar trans={trans} />,
     };
 
-    selectedSidebar = sidebarComponents[sidebarType] || <ModuleSidebar />;
+    selectedSidebar = sidebarComponents[sidebarType] || <PopoverSidebar />;
   }
 
-  return <div>{selectedSidebar}</div>;
+  return <div className="relative">{selectedSidebar}</div>;
 };
 
 export default Sidebar;

@@ -13,6 +13,7 @@ import { Separator } from "@/components/ui/separator";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { usePathname } from "next/navigation";
 import AddBlock from "../common/add-block";
+import LogoutFooter from "./logout-footer";
 
 const PopoverSidebar = ({ trans }) => {
   const { collapsed, sidebarBg } = useSidebar();
@@ -145,6 +146,7 @@ const PopoverSidebar = ({ trans }) => {
           </div>
         )}
       </ScrollArea>
+      <LogoutFooter />
     </div>
   );
 };
