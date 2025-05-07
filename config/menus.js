@@ -4,6 +4,7 @@ import {
   Components,
   DashBoard,
   Stacks2,
+  Settings,
   Map,
   Grid,
   Files,
@@ -131,53 +132,47 @@ export const menusConfig = {
       },
 
       {
-        title: "Application",
-        icon: Application,
-        child: [
-          {
-            title: "chat",
-            icon: Messages,
-            href: "/chat",
-          },
-          {
-            title: "email",
-            icon: Envelope,
-            href: "/email",
-          },
-          {
-            title: "kanban",
-            icon: Monitor,
-            href: "/kanban",
-          },
-          {
-            title: "task",
-            icon: ListFill,
-            href: "/task",
-          },
-          {
-            title: "calendar",
-            icon: Calendar,
-            href: "/calendar",
-          },
-        ],
+        title: "chat",
+        icon: Messages,
+        href: "/chat",
+      },
+      {
+        title: "email",
+        icon: Envelope,
+        href: "/email",
+      },
+      {
+        title: "kanban",
+        icon: Monitor,
+        href: "/kanban",
+      },
+      {
+        title: "task",
+        icon: ListFill,
+        href: "/task",
+      },
+      {
+        title: "calendar",
+        icon: Calendar,
+        href: "/calendar",
       },
 
       {
-        title: "project",
+        title: "project List",
         icon: ClipBoard,
-        child: [
-          {
-            title: "project List",
-            icon: ClipBoard,
-            href: "/projects",
-          },
-          {
-            title: "project Details",
-            icon: ClipBoard,
-            href: "/projects/1/overview",
-          },
-        ],
+        href: "/projects",
       },
+      {
+        title: "project Details",
+        icon: ClipBoard,
+        href: "/projects/1/overview",
+      },
+
+      {
+        title: "Settings",
+        icon: Settings,
+        href: "/setting"
+      }
     ],
 
     classic: [
@@ -204,53 +199,47 @@ export const menusConfig = {
       },
 
       {
-        title: "Application",
-        icon: Application,
-        child: [
-          {
-            title: "chat",
-            icon: Messages,
-            href: "/chat",
-          },
-          {
-            title: "email",
-            icon: Envelope,
-            href: "/email",
-          },
-          {
-            title: "kanban",
-            icon: Monitor,
-            href: "/kanban",
-          },
-          {
-            title: "task",
-            icon: ListFill,
-            href: "/task",
-          },
-          {
-            title: "calendar",
-            icon: Calendar,
-            href: "/calendar",
-          },
-        ],
+        title: "chat",
+        icon: Messages,
+        href: "/chat",
+      },
+      {
+        title: "email",
+        icon: Envelope,
+        href: "/email",
+      },
+      {
+        title: "kanban",
+        icon: Monitor,
+        href: "/kanban",
+      },
+      {
+        title: "task",
+        icon: ListFill,
+        href: "/task",
+      },
+      {
+        title: "calendar",
+        icon: Calendar,
+        href: "/calendar",
       },
 
       {
-        title: "project",
+        title: "project List",
         icon: ClipBoard,
-        child: [
-          {
-            title: "project List",
-            icon: ClipBoard,
-            href: "/projects",
-          },
-          {
-            title: "project Details",
-            icon: ClipBoard,
-            href: "/projects/1/overview",
-          },
-        ],
+        href: "/projects",
       },
+      {
+        title: "project Details",
+        icon: ClipBoard,
+        href: "/projects/1/overview",
+      },
+
+      {
+        title: "Settings",
+        icon: Settings,
+        href: "/setting"
+      }
     ],
   },
 };
