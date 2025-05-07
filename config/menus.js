@@ -105,7 +105,7 @@ export const menusConfig = {
       ],
     },
   ],
-  
+
   sidebarNav: {
     modern: [
       {
@@ -159,22 +159,22 @@ export const menusConfig = {
             icon: Calendar,
             href: "/calendar",
           },
+        ],
+      },
 
+      {
+        title: "project",
+        icon: ClipBoard,
+        child: [
           {
-            title: "project",
+            title: "project List",
             icon: ClipBoard,
-            nested: [
-              {
-                title: "project List",
-                icon: ClipBoard,
-                href: "/projects",
-              },
-              {
-                title: "project Details",
-                icon: ClipBoard,
-                href: "/projects/1/overview",
-              },
-            ],
+            href: "/projects",
+          },
+          {
+            title: "project Details",
+            icon: ClipBoard,
+            href: "/projects/1/overview",
           },
         ],
       },
@@ -232,22 +232,22 @@ export const menusConfig = {
             icon: Calendar,
             href: "/calendar",
           },
+        ],
+      },
 
+      {
+        title: "project",
+        icon: ClipBoard,
+        child: [
           {
-            title: "project",
+            title: "project List",
             icon: ClipBoard,
-            nested: [
-              {
-                title: "project List",
-                icon: ClipBoard,
-                href: "/projects",
-              },
-              {
-                title: "project Details",
-                icon: ClipBoard,
-                href: "/projects/1/overview",
-              },
-            ],
+            href: "/projects",
+          },
+          {
+            title: "project Details",
+            icon: ClipBoard,
+            href: "/projects/1/overview",
           },
         ],
       },
