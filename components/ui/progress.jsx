@@ -99,7 +99,7 @@ const Progress = React.forwardRef(
         >
           {showValue && (
             <span className=" text-right pr-1 text-[10px]  text-primary-foreground block w-full">
-              {value}%
+              {value}
             </span>
           )}
         </ProgressPrimitive.Indicator>
