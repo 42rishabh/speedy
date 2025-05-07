@@ -214,7 +214,7 @@ const ModuleSidebar = ({ trans }) => {
             )}
           </h2>
           <ScrollArea className="h-[calc(100%-40px)]  grow ">
-            <div className="px-4 " dir={isRtl ? "rtl" : "ltr"}>
+            <div className="px-4" dir={isRtl ? "rtl" : "ltr"}>
               <ul>
                 {currentSubMenu?.map((childItem, j) => (
                   <li key={j} className="mb-1.5 last:mb-0">

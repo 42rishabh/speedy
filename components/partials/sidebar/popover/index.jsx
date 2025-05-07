@@ -86,7 +86,7 @@ const PopoverSidebar = ({ trans }) => {
       <Separator />
       <ScrollArea
         className={cn("sidebar-menu  h-[calc(100%-80px)] ", {
-          "px-4": !collapsed,
+          "px-4 mt-2": !collapsed,
         })}
       >
         <ul
