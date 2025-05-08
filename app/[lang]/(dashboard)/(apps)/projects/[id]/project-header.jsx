@@ -201,7 +201,7 @@ const ProjectHeader = ({ project }) => {
             <div className="flex flex-wrap justify-between gap-4">
               <div className="text-xl font-medium text-default-950 truncate">
                 {" "}
-                Wordpress Speedy
+                Dashtail - Admin Template
               </div>
               <div className="space-x-3 rtl:space-x-reverse ">
                 <Badge color="warning" variant="soft">
@@ -215,7 +215,7 @@ const ProjectHeader = ({ project }) => {
               </div>
             </div>
             <div className="text-sm text-default-600 w-full  mt-1">
-              Create a Brand logo design for a Wordpress Speedy Admin. Logo should be
+              Create a Brand logo design for a DashTail Admin. Logo should be
               match our dashboard theme.
             </div>
             <div className="mt-3 flex flex-wrap items-center gap-2 lg:gap-6">
