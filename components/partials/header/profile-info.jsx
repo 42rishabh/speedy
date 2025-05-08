@@ -27,8 +27,8 @@ const ProfileInfo = () => {
             <Image
               src={session?.user?.image}
               alt={session?.user?.name ?? ""}
-              width={36}
-              height={36}
+              width={40}
+              height={40}
               className="rounded-full"
             />
           )}
@@ -40,8 +40,8 @@ const ProfileInfo = () => {
             <Image
               src={session?.user?.image}
               alt={session?.user?.name ?? ""}
-              width={36}
-              height={36}
+              width={40}
+              height={40}
               className="rounded-full"
             />
           )}

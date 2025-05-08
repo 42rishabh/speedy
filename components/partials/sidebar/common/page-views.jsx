@@ -16,7 +16,7 @@ const PageViews = () => {
         onClick={() => setIsOpen(!isOpen)}
       >
         {isOpen ? (
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center justify-center select-none">
             <h3 className="text-lg font-semibold text-center mb-4">Page Views</h3>
             <Progress value={(value / maxValue) * 100} className="h-3 w-full bg-gray-200" />
             <span className="text-sm font-medium text-muted-foreground">{value} / {maxValue}</span>
