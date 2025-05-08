@@ -47,23 +47,23 @@ const SidebarChange = () => {
           newTheme?.cssVars[mode === "dark" ? "dark" : "light"].primary
         })`,
       }}
+      className="mb-4"
     >
-      <div className="mb-2 relative inline-block px-3 py-[3px] rounded-md before:bg-[--theme-primary] before:absolute before:top-0 before:left-0 before:w-full  before:h-full before:rounded before:opacity-10 before:z-[-1]  text-[--theme-primary]  text-xs font-medium">
+      <div className="text-xl font-bold text-primary rounded-md bg-primary-50 p-2">
         Sidebar Layout
       </div>
-      <div className="text-muted-foreground font-normal text-xs mb-4">
-        Choose your layout
-      </div>
-      <div className=" grid grid-cols-3 gap-3">
+      <p className="text-muted-foreground text-sm m-2 mb-4">Choose your layout</p>
+
+      <div className="flex gap-4">
         {sidebarOptions.map((sidebarOption) => (
-          <div key={sidebarOption.key}>
+          <div key={sidebarOption.key} className="flex flex-col w-1/5 items-center">
             <button
               onClick={() => setSidebarType(sidebarOption.key)}
               disabled={
                 sidebarOption.disabled && sidebarOption.disabled(layout)
               }
               className={cn(
-                " border block  rounded relative h-[72px] w-full disabled:cursor-not-allowed",
+                "border block rounded-xl relative w-full overflow-hidden bg-background flex items-center justify-center disabled:cursor-not-allowed",
                 {
                   "text-[--theme-primary] border-[--theme-primary]":
                     sidebarType === sidebarOption.key,
@@ -78,10 +78,12 @@ const SidebarChange = () => {
                   className=" text-[--theme-primary] absolute top-1 right-1"
                 />
               )}
-              {sidebarOption.svg}
+              <div className="w-full h-full flex items-center justify-center p-2">
+                {sidebarOption.svg}
+              </div>
             </button>
 
-            <Label className=" text-muted-foreground font-normal block mt-2">
+            <Label className="mt-2 text-m">
               {sidebarOption.label}
             </Label>
           </div>

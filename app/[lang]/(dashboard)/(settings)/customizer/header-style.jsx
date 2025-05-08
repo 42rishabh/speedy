@@ -27,11 +27,12 @@ const HeaderStyle = () => {
           newTheme?.cssVars[mode === "dark" ? "dark" : "light"].primary
         })`,
       }}
+      className="mb-4"
     >
-      <div className="mb-3 relative inline-block px-3 py-[3px] rounded before:bg-[--theme-primary] before:absolute before:top-0 before:left-0 before:w-full  before:h-full before:rounded before:opacity-10 before:z-[-1]  text-[--theme-primary]  text-xs font-medium">
+      <div className="text-xl font-bold text-primary rounded-md bg-primary-50 p-2">
         Navbar Type
       </div>
-      <div className="flex flex-wrap items-center gap-3">
+      <div className="flex flex-wrap items-center gap-3 m-2">
         {["sticky", "static", "floating", "hidden"].map((value, index) => {
           // Hide or disable the "floating" option if layout is "horizontal"
           if (layout === "horizontal" && value === "floating") {

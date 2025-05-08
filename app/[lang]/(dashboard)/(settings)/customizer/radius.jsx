@@ -8,11 +8,11 @@ const RadiusInit = () => {
   const { radius, setRadius } = useThemeStore();
 
   return (
-    <div>
-      <div className="mb-3  relative inline-block px-3 py-[3px] rounded bg-primary/10 text-primary  text-xs font-medium">
+    <div className="mb-4">
+      <div className="text-xl font-bold text-primary rounded-md bg-primary-50 p-2">
         Rounded
       </div>
-      <div className="grid grid-cols-5 gap-2">
+      <div className="flex w-full gap-4 m-3">
         {["0", "0.3", "0.5", "0.75", "1.0"].map((value) => {
           return (
             <Button

@@ -37,17 +37,18 @@ const SidebarImage = () => {
           newTheme?.cssVars[mode === "dark" ? "dark" : "light"].primary
         })`,
       }}
+      className="mb-4"
     >
-      <div className="mb-2 relative inline-block px-3 py-[3px] rounded before:bg-[--theme-primary] before:absolute before:top-0 before:left-0 before:w-full  before:h-full before:rounded before:opacity-10 before:z-[-1]  text-[--theme-primary]  text-xs font-medium">
+
+      <div className="text-xl font-bold text-primary rounded-md bg-primary-50 p-2">
         Sidebar Image
       </div>
-      <div className="text-muted-foreground font-normal text-xs mb-4">
-        Choose a image of Sidebar.
-      </div>
-      <div className=" grid grid-cols-7 gap-3">
+      <p className="text-muted-foreground text-sm m-2 mb-4">Choose a image of Sidebar.</p>
+
+      <div className="flex gap-4">
         <button
           onClick={handleClear}
-          className=" h-[72px] border border-border flex items-center justify-center rounded text-default-400"
+          className="w-[72px] h-[72px] border border-border flex items-center justify-center rounded-full text-default-400"
         >
           {sidebarBg === "none" ? (
             <Icon icon="heroicons:check" className=" h-6 w-6" />
@@ -60,7 +61,7 @@ const SidebarImage = () => {
             key={index}
             onClick={() => setSidebarBg(file)}
             className={cn(
-              " h-[72px] rounded relative bg-cover bg-no-repeat   bg-blend-multiply ",
+              "w-[72px] h-[72px] rounded-full relative bg-cover bg-no-repeat   bg-blend-multiply ",
               {
                 "custom-bg-opacity": sidebarBg === file,
                 "": sidebarBg !== file,
@@ -80,7 +81,7 @@ const SidebarImage = () => {
             )}
           </button>
         ))}
-        <label className=" h-[72px] rounded border border-border bg-border  flex items-center justify-center text-muted-foreground">
+        <label className="w-[72px] h-[72px] rounded-full border border-border bg-border  flex items-center justify-center text-muted-foreground">
           <input type="file" className="hidden" onChange={handleFileChange} />
 
           <Icon icon="heroicons:cloud-arrow-up" className="w-5 h-5" />

@@ -14,32 +14,26 @@ import Link from "next/link";
 
 export default function ThemeCustomizerPage() {
   return (
-    <div className="p-6 bg-white">
-      <h1 className="text-2xl font-semibold mb-6">Theme Customizer</h1>
-      <div className="space-y-6">
+    <div className="p-6 bg-white rounded-md">
+      <h1 className="text-2xl font-semibold mb-4 text-center">Theme Customizer</h1>
+      <div className="flex flex-col">
         <SelectLayout />
+        <hr className="mb-4"/>
         <SelectTheme />
+        <hr className="mb-4"/>
         <RtlSwitcher />
+        <hr className="mb-4"/>
         <ThemeChange />
+        <hr className="mb-4"/>
         <SidebarChange />
+        <hr className="mb-4"/>
         <SidebarImage />
+        <hr className="mb-4"/>
         <RadiusInit />
+        <hr className="mb-4"/>
         <HeaderStyle />
+        <hr className="mb-4"/>
         <FooterStyle />
-      </div>
-
-      <div className="flex flex-col md:flex-row gap-4 mt-8">
-        <Button asChild className="w-full md:w-auto">
-          <Link href="https://1.envato.market/vNaJR3">Buy Now</Link>
-        </Button>
-        <Button asChild className="w-full md:w-auto">
-          <Link
-            href="https://themeforest.net/user/codeshaperbd/portfolio"
-            target="__blank"
-          >
-            Our Portfolio
-          </Link>
-        </Button>
       </div>
     </div>
   );

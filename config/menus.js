@@ -96,14 +96,20 @@ export const menusConfig = {
     },
 
     {
-      title: "project List",
+      title: "Project",
       icon: List,
-      href: "/projects",
-    },
-    {
-      title: "project Details",
-      icon: Note3,
-      href: "/projects/1/overview",
+      child: [
+        {
+          title: "project List",
+          icon: List,
+          href: "/projects",
+        },
+        {
+          title: "project Details",
+          icon: Note3,
+          href: "/projects/1/overview",
+        },
+      ],
     },
 
     {
@@ -118,6 +124,11 @@ export const menusConfig = {
         {
           title: "Security",
           href: "/security",
+          icon: Note3,
+        },
+        {
+          title: "Customizer",
+          href: "/customizer",
           icon: Note3,
         },
         {
@@ -190,16 +201,22 @@ export const menusConfig = {
       },
 
       {
-        title: "project List",
+        title: "Project",
         icon: List,
-        href: "/projects",
+        child: [
+          {
+            title: "project List",
+            icon: List,
+            href: "/projects",
+          },
+          {
+            title: "project Details",
+            icon: Note3,
+            href: "/projects/1/overview",
+          },
+        ],
       },
-      {
-        title: "project Details",
-        icon: Note3,
-        href: "/projects/1/overview",
-      },
-
+  
       {
         title: "Settings",
         icon: Settings,
@@ -212,6 +229,11 @@ export const menusConfig = {
           {
             title: "Security",
             href: "/security",
+            icon: Note3,
+          },
+          {
+            title: "Customizer",
+            href: "/customizer",
             icon: Note3,
           },
           {
@@ -283,16 +305,22 @@ export const menusConfig = {
       },
 
       {
-        title: "project List",
+        title: "Project",
         icon: List,
-        href: "/projects",
+        child: [
+          {
+            title: "project List",
+            icon: List,
+            href: "/projects",
+          },
+          {
+            title: "project Details",
+            icon: Note3,
+            href: "/projects/1/overview",
+          },
+        ],
       },
-      {
-        title: "project Details",
-        icon: Note3,
-        href: "/projects/1/overview",
-      },
-
+  
       {
         title: "Settings",
         icon: Settings,
@@ -305,6 +333,11 @@ export const menusConfig = {
           {
             title: "Security",
             href: "/security",
+            icon: Note3,
+          },
+          {
+            title: "Customizer",
+            href: "/customizer",
             icon: Note3,
           },
           {

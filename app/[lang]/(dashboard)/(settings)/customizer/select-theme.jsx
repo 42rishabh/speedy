@@ -26,20 +26,20 @@ const SelectTheme = () => {
           newTheme?.cssVars[mode === "dark" ? "dark" : "light"].primary
         })`,
       }}
+      className="mb-4"
     >
-      <div className="mb-2 relative inline-block px-3 py-[3px] rounded-md before:bg-[--theme-primary] before:absolute before:top-0 before:left-0 before:w-full  before:h-full before:rounded before:opacity-10 before:z-[-1]  text-[--theme-primary]  text-xs font-medium">
+      <div className="text-xl font-bold text-primary rounded-md bg-primary-50 p-2">
         Color Scheme
       </div>
-      <div className="text-muted-foreground font-normal text-xs mb-4">
-        Choose Light or Dark Scheme.
-      </div>
-      <div className=" grid grid-cols-2 gap-3">
+      <p className="text-muted-foreground text-sm m-2 mb-4">Choose Light or Dark Scheme.</p>
+
+      <div className="flex gap-4">
         {allThemes?.map((themeOption) => (
-          <div key={themeOption.key} className="flex-1 w-full">
+          <div key={themeOption.key} className="w-fit">
             <button
               onClick={() => setTheme(themeOption.key)}
               className={cn(
-                "border  flex  w-full text-center items-center justify-center py-[14px]  px-10 rounded relative",
+                "border flex w-full text-center items-center justify-center py-[14px]  px-10 rounded relative",
                 {
                   "text-[--theme-primary] border-[--theme-primary]":
                     theme === themeOption.key,
