@@ -16,6 +16,7 @@ import {
   Monitor,
   ListFill,
   Calendar,
+  List,
   Flag,
   Book,
   Note,
@@ -61,7 +62,7 @@ export const menusConfig = {
           icon: Cart,
         },
         {
-          title: "Project ",
+          title: "project ",
           href: "/project",
           icon: ClipBoard,
         },
@@ -69,41 +70,72 @@ export const menusConfig = {
     },
 
     {
-      title: "Application",
-      icon: Application,
+      title: "chat",
+      icon: Messages,
+      href: "/chat",
+    },
+    {
+      title: "email",
+      icon: Envelope,
+      href: "/email",
+    },
+    {
+      title: "kanban",
+      icon: Monitor,
+      href: "/kanban",
+    },
+    {
+      title: "task",
+      icon: ListFill,
+      href: "/task",
+    },
+    {
+      title: "calendar",
+      icon: Calendar,
+      href: "/calendar",
+    },
+
+    {
+      title: "project List",
+      icon: List,
+      href: "/projects",
+    },
+    {
+      title: "project Details",
+      icon: Note3,
+      href: "/projects/1/overview",
+    },
+
+    {
+      title: "Settings",
+      icon: Settings,
       child: [
         {
-          title: "chat",
-          icon: Messages,
-          href: "/chat",
+          title: "General",
+          href: "/general",
+          icon: Note3,
         },
         {
-          title: "email",
-          icon: Envelope,
-          href: "/email",
+          title: "Security",
+          href: "/security",
+          icon: Note3,
         },
         {
-          title: "kanban",
-          icon: Monitor,
-          href: "/kanban",
+          title: "Website SEO",
+          href: "/website-seo",
+          icon: Note3,
         },
         {
-          title: "task",
-          icon: ListFill,
-          href: "/task",
+          title: "Plans",
+          href: "/plans",
+          icon: Note3,
         },
         {
-          title: "calendar",
-          icon: Calendar,
-          href: "/calendar",
+          title: "Payment Methods",
+          href: "/payment-methods",
+          icon: Note3,
         },
-
-        {
-          title: "project",
-          icon: ClipBoard,
-          href: "/projects",
-        },
-      ],
+      ]
     },
   ],
 
@@ -159,20 +191,46 @@ export const menusConfig = {
 
       {
         title: "project List",
-        icon: ClipBoard,
+        icon: List,
         href: "/projects",
       },
       {
         title: "project Details",
-        icon: ClipBoard,
+        icon: Note3,
         href: "/projects/1/overview",
       },
 
       {
         title: "Settings",
         icon: Settings,
-        href: "/setting"
-      }
+        child: [
+          {
+            title: "General",
+            href: "/general",
+            icon: Note3,
+          },
+          {
+            title: "Security",
+            href: "/security",
+            icon: Note3,
+          },
+          {
+            title: "Website SEO",
+            href: "/website-seo",
+            icon: Note3,
+          },
+          {
+            title: "Plans",
+            href: "/plans",
+            icon: Note3,
+          },
+          {
+            title: "Payment Methods",
+            href: "/payment-methods",
+            icon: Note3,
+          },
+        ]
+      },
     ],
 
     classic: [
@@ -226,20 +284,46 @@ export const menusConfig = {
 
       {
         title: "project List",
-        icon: ClipBoard,
+        icon: List,
         href: "/projects",
       },
       {
         title: "project Details",
-        icon: ClipBoard,
+        icon: Note3,
         href: "/projects/1/overview",
       },
 
       {
         title: "Settings",
         icon: Settings,
-        href: "/setting"
-      }
+        child: [
+          {
+            title: "General",
+            href: "/general",
+            icon: Note3,
+          },
+          {
+            title: "Security",
+            href: "/security",
+            icon: Note3,
+          },
+          {
+            title: "Website SEO",
+            href: "/website-seo",
+            icon: Note3,
+          },
+          {
+            title: "Plans",
+            href: "/plans",
+            icon: Note3,
+          },
+          {
+            title: "Payment Methods",
+            href: "/payment-methods",
+            icon: Note3,
+          },
+        ]
+      },
     ],
   },
 };

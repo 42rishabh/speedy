@@ -51,7 +51,7 @@ const MessageHeader = ({
           </span>
         </div>
       </div>
-      <div className="flex-none space-x-2 rtl:space-x-reverse">
+      <div className="flex gap-2 rtl:space-x-reverse">
         <TooltipProvider>
           <Tooltip>
             <TooltipTrigger asChild>
@@ -61,7 +61,7 @@ const MessageHeader = ({
                 className="bg-transparent rounded-full hover:bg-default-50"
               >
                 <span className="text-xl text-primary">
-                  <Icon icon="solar:phone-linear" />
+                  <Icon className="w-7 h-7" icon="solar:phone-linear" />
                 </span>
               </Button>
             </TooltipTrigger>
@@ -81,7 +81,7 @@ const MessageHeader = ({
                 className="bg-transparent rounded-full hover:bg-default-50"
               >
                 <span className="text-xl text-primary">
-                  <Icon icon="mdi:video-outline" />
+                  <Icon className="w-7 h-7" icon="mdi:video-outline" />
                 </span>
               </Button>
             </TooltipTrigger>
@@ -108,9 +108,9 @@ const MessageHeader = ({
               >
                 <span className="text-xl text-primary ">
                   {showInfo ? (
-                    <Icon icon="material-symbols:info" />
+                    <Icon className="w-7 h-7" icon="material-symbols:info" />
                   ) : (
-                    <Icon icon="material-symbols:info-outline" />
+                    <Icon className="w-7 h-7" icon="material-symbols:info-outline" />
                   )}
                 </span>
               </Button>

@@ -239,7 +239,7 @@ const ChatPage = () => {
           <CardHeader className="border-none pb-0 mb-0">
             <MyProfileHeader profile={profileData} />
           </CardHeader>
-          <CardContent className="pt-0 px-0   lg:h-[calc(100%-170px)] h-[calc(100%-70px)]   ">
+          <CardContent className="pt-0 px-0 lg:h-[calc(100%-170px)] h-[calc(100%-70px)]   ">
             <ScrollArea className="h-full">
               {isLoading ? (
                 <Loader />
@@ -280,7 +280,7 @@ const ChatPage = () => {
                   />
                 )}
 
-                <CardContent className=" !p-0 relative flex-1 overflow-y-auto">
+                <CardContent className="!p-0 relative flex-1 overflow-y-auto rish">
                   <div
                     className="h-full py-4 overflow-y-auto no-scrollbar"
                     ref={chatHeightRef}
